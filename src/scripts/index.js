@@ -40,7 +40,7 @@ agregarTareas.addEventListener("click", async function () {
         return;
     }
     
-    createElement()
+    //createElement()
     /*for (let i = 0; i < data.length; i++) {
       // primera opcion usar el for pero antes del for tenemos que limpiar tenemos que limpiar todos lo 
       // hijos del elemento padre que nuestro elemento padre lista y podremos llamar al for o si no la segunda opcion
@@ -50,9 +50,10 @@ agregarTareas.addEventListener("click", async function () {
 
         
     }*/
-    //guardarTarea()
-    //obtenerTarea(data)
-   
+    let postValor =await guardarTarea()
+    console.log(postValor)
+
+    obtenerTarea()
     input.value = "";
 
 
